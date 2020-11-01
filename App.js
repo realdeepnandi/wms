@@ -13,27 +13,27 @@ const app = angular.module("myApp", ["ngRoute"]);
               
             })
             .when("/species/normal", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/normal.html",
               controller : "normal"
             })
             .when("/species/endangered", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/endangered.html",
               controller : "endangered"
             })
             .when("/species/extinct", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/extinct.html",
               controller : "extinct"
             })
             .when("/species/rare", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/rare.html",
               controller : "rare"
             })
             .when("/species/endemic", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/endemic.html",
               controller : "endemic"
             })
             .when("/species/vulnerable", {
-              templateUrl: "templates/species.html",
+              templateUrl: "templates/vulnerable.html",
               controller : "vulnerable"
             })
             .when("/parks", {
@@ -49,25 +49,25 @@ const app = angular.module("myApp", ["ngRoute"]);
       ]);
       app.controller("normal", function ($scope) {
         $scope.title = "Normal Scpecies";
-        $scope.msg = "Normal Species";
+        
       });
       app.controller("extinct", function ($scope) {
         $scope.title = "Extinct Scpecies";
-        $scope.msg = "Extinct Species";
+        
       });
       app.controller("endangered", function ($scope) {
         $scope.title = "Endangered Scpecies";
-        $scope.msg = "endangered Species";
+        
       });
       app.controller("endemic", function ($scope) {
         $scope.title = "Endemic Scpecies";
-        $scope.msg = "Endemic Species";
+        
       });
       app.controller("rare", function ($scope) {
-        $scope.title = "Rare Scpecies";
-        $scope.msg = "Rare Species";
+        $scope.title = "Rare Species";
+        
       });
       app.controller("vulnerable", function ($scope) {
-        $scope.title = "Vulnerable Scpecies";
-        $scope.msg = "Vulnerable Species";
+        $scope.title = "Vulnerable Species";
+        
       });
