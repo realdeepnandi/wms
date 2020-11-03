@@ -1,1 +1,305 @@
-<h1>Tourism</h1>
+<!-- Jumbotron -->
+<style>
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+<div
+  class="card card-image"
+  style="
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1558785314-659205dc1a3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  "
+>
+  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+    <div class="py-5">
+      <!-- Content -->
+
+      <h2 class="card-title h2 my-4 py-2">Wildlife Tourism</h2>
+      <p class="mb-4 pb-2 px-md-5 mx-md-5">
+        They feel pain, hear their cry, if you see animal abuse, don't just walk
+        by.
+      </p>
+    </div>
+  </div>
+</div>
+<br /><br />
+<!-- Jumbotron -->
+<div class="container">
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img1.jpg" style="width: 100%" />
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img2.jpg" style="width: 100%" />
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img3.jpg" style="width: 100%" />
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <!-- The dots/circles -->
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+<br /><br />
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+  <div style="background-color: #21d156">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">
+          Wildlife Management System
+        </h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p>
+          Wildlife Management System made with Angular JS, JQuery, Bootstrap.
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p>
+          <a class="dark-grey-text" href="#!">Tourism</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Statistics</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">National Parks</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p><i class="fas fa-home mr-3"></i> India</p>
+        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">
+    © 2020 Copyright:
+    <a class="dark-grey-text" href="#"> WMS</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+<!-- Footer -->
