@@ -86,7 +86,10 @@
   </div>
   <br /><br />
 
-  <form class="text-center border border-light p-5" action="">
+  <form
+    onsubmit="return validate()"
+    class="text-center border border-light p-5"
+  >
     <p class="h4 mb-4">Book your tourism package</p>
 
     <input type="text" id="name" class="form-control mb-4" placeholder="Name" />
