@@ -22,7 +22,7 @@
 
 <div class="container">
   <div id="view"></div>
-  <div class="load">Loading...</div>
+  <div id="load">Loading...</div>
   <br />
 
   <center>
@@ -155,8 +155,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   $(document).ready(function () {
-    $("#view").load(function () {
-      $(".load").hide();
+    $("#view").ready(function () {
+      $("#id").hide();
     });
   });
 </script>
