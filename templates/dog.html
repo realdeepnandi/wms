@@ -4,7 +4,6 @@
   style="
     height: 100%;
     width: 100%;
-    background-size: cover;
     background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_488541.jpg);
   "
 >
@@ -22,6 +21,12 @@
 <br /><br />
 
 <div class="container"></div>
+<br />
+<center>
+  <button class="btn btn-success btn-block my-4" type="button" onclick="gen()">
+    Generate
+  </button>
+</center>
 <br /><br />
 <!-- Default form login -->
 
@@ -124,4 +129,21 @@
       // There was an error
       console.warn("Something went wrong.", err);
     });
+  function gen() {
+    fetch("https://random.dog/woof.json?filter=mp4,webm")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        // This is the JSON from our response
+        document.querySelector(".container").innerHTML =
+          "<center><img class='img-fluid z-depth-2' width=500 src='" +
+          data.url +
+          "'></center>";
+      })
+      .catch(function (err) {
+        // There was an error
+        console.warn("Something went wrong.", err);
+      });
+  }
 </script>
