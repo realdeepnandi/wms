@@ -122,6 +122,7 @@
       <option value="1" selected>Basic Plan - ₹1,500 per person</option>
       <option value="2">Premium Plan - ₹2,500 per person</option>
     </select>
+    <label>Date of travel</label>
     <input
       type="date"
       id="date"
@@ -235,6 +236,7 @@
     // let area = document.querySelector("#area").value;
     let d1 = new Date(document.querySelector("#date").value);
     let d2 = new Date();
+    var e = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
     if (name.trim() == "" || name.trim() == null) {
       msg += "Name cannot be empty\n";
@@ -252,6 +254,10 @@
     //   msg += "Area cannot be empty\n";
     //   ++err;
     // }
+    if (!e.test(email)) {
+      msg += "Email is Invalid\n";
+      ++err;
+    }
     if (email.replace(/\s+/g, "") == "" || email.replace(/\s+/g, "") == null) {
       msg += "Email cannot be empty\n";
       ++err;
