@@ -20,13 +20,18 @@
 </div>
 <br /><br />
 
-<div class="container"></div>
-<br />
-<center>
-  <button class="btn btn-success btn-block my-4" type="button" onclick="gen()">
-    Generate
-  </button>
-</center>
+<div class="container">
+  <div id="view"></div>
+  <div class="load">Loading...</div>
+  <br />
+
+  <center>
+    <button class="btn btn-success" type="button" onclick="gen()">
+      Generate
+    </button>
+  </center>
+</div>
+
 <br /><br />
 <!-- Default form login -->
 
@@ -120,7 +125,7 @@
     })
     .then(function (data) {
       // This is the JSON from our response
-      document.querySelector(".container").innerHTML =
+      document.querySelector("#view").innerHTML =
         "<center><img class='img-fluid z-depth-2' width=500 src='" +
         data.url +
         "'></center>";
@@ -136,7 +141,7 @@
       })
       .then(function (data) {
         // This is the JSON from our response
-        document.querySelector(".container").innerHTML =
+        document.querySelector("#view").innerHTML =
           "<center><img class='img-fluid z-depth-2' width=500 src='" +
           data.url +
           "'></center>";
@@ -146,4 +151,12 @@
         console.warn("Something went wrong.", err);
       });
   }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#view").load(function () {
+      $(".load").hide();
+    });
+  });
 </script>
