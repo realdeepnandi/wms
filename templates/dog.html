@@ -136,6 +136,8 @@
         </div>
       </div>
     </div>
+    <br /><br />
+
     <div class="container"></div>
     <br /><br />
     <!-- Default form login -->
@@ -236,9 +238,9 @@
         .then(function (data) {
           // This is the JSON from our response
           document.querySelector(".container").innerHTML =
-            "<img class='img-fluid z-depth-1' width=400 src='" +
+            "<center><img class='img-fluid z-depth-1' width=500 src='" +
             data.url +
-            "'>";
+            "'></center>";
         })
         .catch(function (err) {
           // There was an error
