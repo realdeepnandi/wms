@@ -39,6 +39,9 @@ const app = angular.module("myApp", ["ngRoute"]);
             .when("/parks", {
               templateUrl: "templates/parks.html",
               
+            }).when("/fun/randomcutedogs", {
+              templateUrl: "templates/dog.html",
+              
             })
             .when("/stats", {
               templateUrl: "templates/stats.html",
