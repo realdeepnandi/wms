@@ -1,1 +1,204 @@
-<h1>National Parks & Wildlife Sanctuaries</h1>
+<!-- Jumbotron -->
+<style>
+  .tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+    overflow: scroll;
+  }
+
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
+</style>
+<div
+  class="card card-image"
+  style="
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.nationalgeographic.com/content/dam/news/2015/10/21/touristsandanimals/1touristsandanimals.ngsversion.1458225016974.adapt.1900.1.jpg);
+  "
+>
+  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+    <div class="py-5">
+      <!-- Content -->
+
+      <h2 class="card-title h2 my-4 py-2">Wildlife Tourism</h2>
+      <p class="mb-4 pb-2 px-md-5 mx-md-5">
+        They feel pain, hear their cry, if you see animal abuse, don't just walk
+        by.
+      </p>
+    </div>
+  </div>
+</div>
+<br /><br />
+<!-- Jumbotron -->
+<div class="container">
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'L')" id="defaultOpen">
+      L
+    </button>
+    <button class="tablinks" onclick="openCity(event, 'P')">P</button>
+    <button class="tablinks" onclick="openCity(event, 'T')">T</button>
+    <button class="tablinks" onclick="openCity(event, 'A')">A</button>
+    <button class="tablinks" onclick="openCity(event, 'D')">D</button>
+  </div>
+
+  <div id="L" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="p" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="T" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="A" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="D" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+<br /><br />
+<!-- Default form login -->
+
+<!-- Default form login -->
+<br /><br />
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+  <div style="background-color: #21d156">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Be an everyday hero, stop animal abuse.</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">
+          Wildlife Management System
+        </h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p>
+          Wildlife Management System made with Angular JS, JQuery, Bootstrap.
+        </p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p>
+          <a class="dark-grey-text" href="#!">Tourism</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Statistics</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">National Parks</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr
+          class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px"
+        />
+        <p><i class="fas fa-home mr-3"></i> India</p>
+        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">
+    © 2020 Copyright:
+    <a class="dark-grey-text" href="#"> WMS</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script>
+  function openCity(evt, park) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(park).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultOpen").click();
+</script>
