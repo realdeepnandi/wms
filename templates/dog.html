@@ -153,9 +153,9 @@
   </div>
   <!-- Copyright -->
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $("#view").ready(function () {
-    $("#load").hide();
-  });
+  var a = document.querySelector("#view");
+  a.onload = function () {
+    document.getElementById("load").style.display = "none";
+  };
 </script>
