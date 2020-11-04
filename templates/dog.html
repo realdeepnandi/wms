@@ -6,7 +6,7 @@
     .then(function (data) {
       // This is the JSON from our response
       document.querySelector("#view").innerHTML =
-        "<center><img class='img-fluid z-depth-2' height=250  src='" +
+        "<center><img class='img-fluid z-depth-2' style='width:270px' src='" +
         data.url +
         "'></center>";
     })
@@ -22,7 +22,7 @@
       .then(function (data) {
         // This is the JSON from our response
         document.querySelector("#view").innerHTML =
-          "<center><img class='img-fluid z-depth-2' height=250  src='" +
+          "<center><img class='img-fluid z-depth-2' style='width:270px'  src='" +
           data.url +
           "'></center>";
       })
