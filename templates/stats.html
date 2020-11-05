@@ -1,4 +1,35 @@
 <!-- Jumbotron -->
+<script
+  type="text/javascript"
+  src="https://www.gstatic.com/charts/loader.js"
+></script>
+<script type="text/javascript">
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Threats to Wildlife", "Percentile"],
+      ["Exploitation", 37],
+      ["Habitat Degradation", 31.4],
+      ["Habitat Loss", 13.4],
+      ["Climate Change", 7.1],
+      ["Invasive Species", 5.1],
+      ["Pollution", 4],
+      ["Disease", 2],
+    ]);
+
+    var options = {
+      title: "Threats to wildlife and population decline from 1970-2010",
+      width: 550,
+      height: 400,
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById("piechart")
+    );
+    chart.draw(data, options);
+  }
+</script>
 <div
   class="card card-image"
   style="
@@ -18,42 +49,44 @@
     </div>
   </div>
 </div>
-<br /><br />
+<br />
 <div class="container">
+  <div id="piechart"></div>
+  <br /><br />
   <div class="card">
     <div class="card-body">
       <h2 class="card-title" style="color: orangered">60%</h2>
-      <p class="card-text">
+      <p class="card-text h6">
         Populations of mammals, birds, fish, reptiles, and amphibians have, on
         average, declined by 60% between 1970 and 2014, the most recent year
         with available data.
       </p>
     </div>
   </div>
-  <br /><br />
+  <br />
   <div class="card">
     <div class="card-body">
       <h2 class="card-title" style="color: orangered">50%</h2>
-      <p class="card-text">
+      <p class="card-text h6">
         The Earth is estimated to have lost about half of its shallow water
         corals in the past 30 years.
       </p>
     </div>
   </div>
-  <br /><br />
+  <br />
   <div class="card">
     <div class="card-body">
       <h2 class="card-title" style="color: orangered">20%</h2>
-      <p class="card-text">
+      <p class="card-text h6">
         A fifth of the Amazon has disappeared in just 50 years.
       </p>
     </div>
   </div>
-  <br /><br />
+  <br />
   <div class="card">
     <div class="card-body">
       <h2 class="card-title" style="color: orangered">$125 trillion</h2>
-      <p class="card-text">
+      <p class="card-text h6">
         Globally, nature provides services worth around $125 trillion a year,
         while also helping ensure the supply of fresh air, clean water, food,
         energy, medicines, and much more.
