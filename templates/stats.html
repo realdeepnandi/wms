@@ -1,3 +1,47 @@
+<script>
+  //pie
+  var ctxP = document.getElementById("pieChart").getContext("2d");
+  var myPieChart = new Chart(ctxP, {
+    type: "pie",
+    data: {
+      labels: [
+        "Exploitation",
+        "Habitat Degradation",
+        "Habitat Loss",
+        "Climate Change",
+        "Invasive Species",
+        "Pollution",
+        "Disease",
+      ],
+      datasets: [
+        {
+          data: [37, 31.4, 13.4, 7.1, 5.1, 4, 2],
+          backgroundColor: [
+            "#F7464A",
+            "#46BFBD",
+            "#FDB45C",
+            "#949FB1",
+            "#4D5360",
+            "#F7464A",
+            "#46BFBD",
+          ],
+          hoverBackgroundColor: [
+            "#FF5A5E",
+            "#5AD3D1",
+            "#FFC870",
+            "#A8B3C5",
+            "#616774",
+            "#FF5A5E",
+            "#5AD3D1",
+          ],
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+    },
+  });
+</script>
 <div
   class="card card-image"
   style="
@@ -19,7 +63,7 @@
 </div>
 <br />
 <div class="container">
-  <div id="piechart"></div>
+  <canvas id="pieChart"></canvas>
   <br /><br />
   <div class="card">
     <div class="card-body">
@@ -154,34 +198,3 @@
 </footer>
 <!-- Footer -->
 <!-- Jumbotron -->
-<script
-  type="text/javascript"
-  src="https://www.gstatic.com/charts/loader.js"
-></script>
-<script type="text/javascript">
-  google.charts.load("current", { packages: ["corechart"] });
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ["Threats to Wildlife", "Percentile"],
-      ["Exploitation", 37],
-      ["Habitat Degradation", 31.4],
-      ["Habitat Loss", 13.4],
-      ["Climate Change", 7.1],
-      ["Invasive Species", 5.1],
-      ["Pollution", 4],
-      ["Disease", 2],
-    ]);
-
-    var options = {
-      title: "Threats to wildlife and population decline from 1970-2010",
-      width: 550,
-      height: 400,
-    };
-
-    var chart = new google.visualization.PieChart(
-      document.getElementById("piechart")
-    );
-    chart.draw(data, options);
-  }
-</script>
