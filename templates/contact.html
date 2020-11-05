@@ -23,7 +23,7 @@
 
 <div class="container">
   <!-- Default form contact -->
-  <form id="frm" class="text-center border border-light p-5" action="#!">
+  <form id="frm" class="text-center border border-light p-5" action="">
     <p class="h3 mb-4">Contact us</p>
 
     <!-- Name -->
@@ -187,6 +187,9 @@
           required: "Message is required",
           maxlength: "Maxlength allowed is 250 characters",
         },
+      },
+      submitHandler: function (form) {
+        form.submit();
       },
     });
   });
