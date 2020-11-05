@@ -149,48 +149,9 @@
   </div>
   <!-- Copyright -->
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
-  integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
-  crossorigin="anonymous"
-></script>
+
 <script>
   $(document).ready(function () {
-    $("#frm").validate({
-      rules: {
-        name: {
-          required: true,
-          lettersonly: true,
-          maxlength: 75,
-        },
-        email: {
-          required: true,
-          email: true,
-        },
-        message: {
-          required: true,
-          maxlength: 250,
-        },
-      },
-      messages: {
-        name: {
-          required: "Name is required",
-          lettersonly: "Only alphabets are allowed",
-          maxlength: "Maxlength of name is 75",
-        },
-        email: {
-          required: "Email is required",
-          email: "Your email address must be in the format of name@domain.com",
-        },
-        message: {
-          required: "Message is required",
-          maxlength: "Maxlength allowed is 250 characters",
-        },
-      },
-      submitHandler: function (form) {
-        form.submit();
-      },
-    });
+    $("#frm").validate();
   });
 </script>
