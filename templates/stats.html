@@ -1,35 +1,3 @@
-<!-- Jumbotron -->
-<script
-  type="text/javascript"
-  src="https://www.gstatic.com/charts/loader.js"
-></script>
-<script type="text/javascript">
-  google.charts.load("current", { packages: ["corechart"] });
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ["Threats to Wildlife", "Percentile"],
-      ["Exploitation", 37],
-      ["Habitat Degradation", 31.4],
-      ["Habitat Loss", 13.4],
-      ["Climate Change", 7.1],
-      ["Invasive Species", 5.1],
-      ["Pollution", 4],
-      ["Disease", 2],
-    ]);
-
-    var options = {
-      title: "Threats to wildlife and population decline from 1970-2010",
-      width: 550,
-      height: 400,
-    };
-
-    var chart = new google.visualization.PieChart(
-      document.getElementById("piechart")
-    );
-    chart.draw(data, options);
-  }
-</script>
 <div
   class="card card-image"
   style="
@@ -185,3 +153,35 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<!-- Jumbotron -->
+<script
+  type="text/javascript"
+  src="https://www.gstatic.com/charts/loader.js"
+></script>
+<script type="text/javascript">
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Threats to Wildlife", "Percentile"],
+      ["Exploitation", 37],
+      ["Habitat Degradation", 31.4],
+      ["Habitat Loss", 13.4],
+      ["Climate Change", 7.1],
+      ["Invasive Species", 5.1],
+      ["Pollution", 4],
+      ["Disease", 2],
+    ]);
+
+    var options = {
+      title: "Threats to wildlife and population decline from 1970-2010",
+      width: 550,
+      height: 400,
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById("piechart")
+    );
+    chart.draw(data, options);
+  }
+</script>
